@@ -25,6 +25,10 @@ public class Squirrel {
         System.out.println("A " + this.colour + " squirrel is running!");
     }
 
+    public void speak() {
+        System.out.println("Hi! I'm a " + this.size + " squirrel!");
+    }
+
     public void kill() {
         this.alive = false;
     }
