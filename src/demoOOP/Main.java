@@ -5,20 +5,23 @@ public class Main {
         
         Squirrel zeke;
         Squirrel montgomery;
-        Squirrel chang;
-        Squirrel splinter;
         Squirrel roadkill;
 
         zeke = new Squirrel("brown", "small");
-        montgomery = new Squirrel("black", "medium");
-        chang = new Squirrel("red", "small");
-        splinter = new Squirrel("white", "large");
+        montgomery = new Squirrel("white", "medium");
         roadkill = new Squirrel("black", "flat");
 
         zeke.run();
-        chang.run();
+        montgomery.run();
         roadkill.run();
+        
         roadkill.kill();
+
+        if (roadkill.alive == true) {
+            System.out.println("He's alive!");
+        } else { 
+            System.out.println("He's dead. :(");
+        }
         
     }
 }
