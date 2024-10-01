@@ -35,7 +35,7 @@ public class Squirrel {
     // Method to make the squirrel eat
     public void eat(String food) {
         System.out.println(name + " is eating " + food + ".");
-        weight += 0.1; // squirrel gains some weight
+        weight += 0.5; // squirrel gains some weight
     }
 
     // Method to display squirrel statistics
@@ -51,12 +51,12 @@ public class Squirrel {
 
     // Return alive state
     public boolean isAlive() {
-        return this.alive;
+        return alive;
     }
 
     // Retrn name
     public String getName() {
-        return this.name;
+        return name;
     }
 
 

@@ -23,6 +23,8 @@ public class Main {
         // Perform actions on the squirrels
         allSquirrels.get(0).eat("pizza");    // Zeke eats pizza
         allSquirrels.get(2).eat("acorns");   // Tanner eats acorns
+        allSquirrels.get(0).eat("acorns");    // Zeke eats acorns
+        allSquirrels.get(0).eat("acorns");    // Zeke eats acorns
 
         // Make some squirrels run
         allSquirrels.get(0).run();  // Zeke runs
