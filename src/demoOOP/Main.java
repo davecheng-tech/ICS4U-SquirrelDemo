@@ -14,9 +14,18 @@ public class Main {
         zeke.run();
         montgomery.run();
         roadkill.run();
-        
+
+        // output the status of the squirrel
+        if (roadkill.alive == true) {
+            System.out.println("He's alive!");
+        } else { 
+            System.out.println("He's dead. :(");
+        }        
+
+        // unalive them
         roadkill.kill();
 
+        // output the status of the squirrel again
         if (roadkill.alive == true) {
             System.out.println("He's alive!");
         } else { 
