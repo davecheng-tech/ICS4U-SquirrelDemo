@@ -10,8 +10,8 @@ public class Squirrel {
     // constructor
     /**
      * Creates an instance of Squirrel
-     * @param newColour
-     * @param newSize
+     * @param newColour String specifying the colour of the squirrel
+     * @param newSize String describing the size of the squirrel
      */
     public Squirrel(String newColour, String newSize) {
         this.alive = true;
