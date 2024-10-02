@@ -33,5 +33,15 @@ public class Main {
         player2.displayInfo();
         player3.displayInfo();
 
+        // kill one of them
+        player1.kill();
+
+        System.out.println(""); // line break
+
+        // show all stats using string method
+        System.out.println(player1);
+        System.out.println(player2);
+        System.out.println(player3);
+
     }
 }

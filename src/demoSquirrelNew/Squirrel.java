@@ -18,11 +18,11 @@ public class Squirrel {
      * @param newWeight Weight of squirrel, in kg.
      */
     public Squirrel(String newName, int newAge, String newColour, double newWeight) {
-        this.name = newName;
-        this.age = newAge;
-        this.colour = newColour;
-        this.weight = newWeight;
-        this.alive = true;
+        name = newName;
+        age = newAge;
+        colour = newColour;
+        weight = newWeight;
+        alive = true;
     }
 
 
@@ -38,12 +38,6 @@ public class Squirrel {
         weight += 0.1; // squirrel gains some weight
     }
 
-    // Method to display squirrel statistics
-    public void displayInfo() {
-        System.out.println("Squirrel Details - Name: " + name + ", Age: " + age + 
-                           " years, Fur: " + colour + ", Weight: " + weight + " kg");
-    }
-
     // Method to die
     public void kill() {
         alive = false;
@@ -52,6 +46,19 @@ public class Squirrel {
     // Return alive state
     public boolean isAlive() {
         return this.alive;
+    }
+
+    // Method to display squirrel statistics
+    public void displayInfo() {
+        System.out.println("Squirrel Details - Name: " + name + ", Age: " + age + 
+                           " years, Fur: " + colour + ", Weight: " + weight + " kg");
+    }
+
+    // toString() method
+    public String toString() {
+        return "Squirrel Details - Name: " + name + ", Age: " + age + 
+        " years, Fur: " + colour + ", Weight: " + weight + " kg";
+
     }
 
 }
