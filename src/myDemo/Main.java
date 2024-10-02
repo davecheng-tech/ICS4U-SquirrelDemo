@@ -11,16 +11,20 @@ public class Main {
         System.out.println(davesPhone);
         System.out.println(ericsPhone);
 
-        // do things to the phone
+        // do things to the phones
+        davesPhone.ring();
         momsPhone.ring();
-
+        
         // display information
         System.out.println(momsPhone);
 
         // break the phone
+        davesPhone.smash();
         momsPhone.smash();
+        davesPhone.repair();
 
         // display information
+        System.out.println(davesPhone);
         System.out.println(momsPhone);
 
     }
