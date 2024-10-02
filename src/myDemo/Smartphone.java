@@ -16,6 +16,17 @@ public class Smartphone {
     }
 
     // instance methods
+    public void ring() {
+        System.out.println("The " + model + " is ringing!");
+    }
+
+
+    public void smash() {
+        isWorking = false;
+    }
+
+
+    // Default method toString() that outputs useful information
     public String toString() {
         return model + " - Memory: " + memory + ", Screen: " + screenSize + ", Working: " + isWorking;
     }
